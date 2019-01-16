@@ -1,0 +1,74 @@
+<html>
+
+<head>
+<title>FSO Toolbar</title>
+<base target="main">
+</head>
+<body bgcolor="#000000" text="#FFFFFF">
+<!-- First script !--><script LANGUAGE="JavaScript"><!--
+
+var browser=false;
+if(document.images) browser=true;
+
+if (browser){
+var object=new Array();
+
+object['mrr']=new objectdata(88,37,"mrr-on.gif","mrr-off.gif","mrr");
+object['news']=new objectdata(88,37,"news-on.gif","news-off.gif","news");
+object['chain']=new objectdata(88,37,"chain-on.gif","chain-off.gif","chain");
+object['fsomail']=new objectdata(88,37,"fsomail-on.gif","fsomail-off.gif","fsomail");
+object['directory']=new objectdata(88,37,"directory-on.gif","directory-off.gif","directory");
+object['downloads']=new objectdata(88,37,"downloads-on.gif","downloads-off.gif","downloads");
+object['backo']=new objectdata(88,37,"back-on.gif","back-off.gif","backo");
+
+// add more objects above this line
+}
+
+function objectdata(hsize,vsize,replaceimg,restoreimg,mess)
+{if(browser) 
+{this.mess=mess;
+this.simg=new Image(hsize,vsize);
+this.simg.src=replaceimg;
+this.rimg=new Image(hsize,vsize);
+this.rimg.src=restoreimg;}}
+
+function ReplaceOrig(name)
+{if(browser) 
+{window.status=object[name].mess;
+document[name].src=object[name].simg.src;}} 
+
+function RestoreOrig(name)
+{if(browser) 
+{window.status="";
+document[name].src=object[name].rimg.src;}} 
+
+
+// End of JavaScript --></script>
+<p>
+<a HREF="../rules.htm"
+OnMouseOver="ReplaceOrig('mrr');return true;" OnMouseOut="RestoreOrig('mrr');"><img
+SRC="mrr-off.gif" NAME="mrr" border="0"></a><br>
+<a HREF="../news.htm"
+OnMouseOver="ReplaceOrig('news');return true;" OnMouseOut="RestoreOrig('news');"><img
+SRC="news-off.gif" NAME="news" border="0"></a><br>
+<a HREF="../coc.htm"
+OnMouseOver="ReplaceOrig('chain');return true;" OnMouseOut="RestoreOrig('chain');"><img
+SRC="chain-off.gif" NAME="chain" border="0"></a><br>
+<a HREF="http://fso.zzn.com"
+OnMouseOver="ReplaceOrig('fsomail');return true;" OnMouseOut="RestoreOrig('fsomail');"><img
+SRC="fsomail-off.gif" NAME="fsomail" border="0"></a><br>
+<a HREF="../directory.htm"
+OnMouseOver="ReplaceOrig('directory');return true;" OnMouseOut="RestoreOrig('directory');"><img
+SRC="directory-off.gif" NAME="directory" border="0"></a><br>
+<a HREF="../downloads.htm"
+OnMouseOver="ReplaceOrig('downloads');return true;" OnMouseOut="RestoreOrig('downloads');"><img
+SRC="downloads-off.gif" NAME="downloads" border="0"></a><br>
+<a HREF="toolbar.htm"
+OnMouseOver="ReplaceOrig('backo');return true;" target="contents" OnMouseOut="RestoreOrig('backo');"><img
+SRC="back-off.gif" NAME="backo" border="0"></a><br>
+
+<p><small><font face="Arial"><small><small><small>These pages are best viewed using a SVGA
+colour monitor at 800x600 resolution. All text and images are ©1999 Duncan Broom, used
+with permission by the Federation Simulation Organization and its Webpage Department. This page is best viewed using Internet Explorer or Netscape version 4 or better.  Please report all bugs / suggestions to the <a href="mailto:webmaster@fsosim.net">webmaster</a>.</small></small></small></font></small></p>
+</body>
+</html>

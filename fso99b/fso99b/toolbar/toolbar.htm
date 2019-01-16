@@ -1,0 +1,82 @@
+<html>
+
+<head>
+<title>FSO Toolbar</title>
+<base target="main">
+</head>
+<body bgcolor="#000000" text="#FFFFFF">
+<!-- First script !--><script LANGUAGE="JavaScript"><!--
+
+var browser=false;
+if(document.images) browser=true;
+
+if (browser){
+var object=new Array();
+
+object['home']=new objectdata(88,37,"home-on.gif","home-off.gif","home");
+object['mission']= new objectdata(88,37,"mission-on.gif","mission-off.gif","mission");
+object['guide']= new objectdata(88,37,"guide-on.gif","guide-off.gif","guide");
+object['sched']= new objectdata(88,37,"sched-on.gif","sched-off.gif","sched");
+object['servers']= new objectdata(88,37,"servers-on.gif","servers-off.gif","servers");
+object['join']= new objectdata(88,37,"join-on.gif","join-off.gif","join");
+object['history']= new objectdata(88,37,"history-on.gif","history-off.gif","history");
+object['members']= new objectdata(88,37,"members-on.gif","members-off.gif","members");
+object['links']= new objectdata(88,37,"links-on.gif","links-off.gif","links");
+
+// add more objects above this line
+}
+
+function objectdata(hsize,vsize,replaceimg,restoreimg,mess)
+{if(browser)
+{this.mess=mess;
+this.simg=new Image(hsize,vsize);
+this.simg.src=replaceimg;
+this.rimg=new Image(hsize,vsize);
+this.rimg.src=restoreimg;}}
+
+function ReplaceOrig(name)
+{if(browser)
+{window.status=object[name].mess;
+document[name].src=object[name].simg.src;}}
+
+function RestoreOrig(name)
+{if(browser)
+{window.status="";
+document[name].src=object[name].rimg.src;}}
+
+
+// End of JavaScript --></script>
+<p>
+<a HREF="../body.htm"
+OnMouseOver="ReplaceOrig('home');return true;" OnMouseOut="RestoreOrig('home');"><img
+SRC="home-off.gif" NAME="home" border="0"></a><br>
+<a HREF="../mis.htm"
+OnMouseOver="ReplaceOrig('mission');return true;" OnMouseOut="RestoreOrig('mission');"><img
+SRC="mission-off.gif" NAME="mission" border="0"></a><br>
+<a HREF="../guide.htm"
+OnMouseOver="ReplaceOrig('guide');return true;" OnMouseOut="RestoreOrig('guide');"><img
+SRC="guide-off.gif" NAME="guide" border="0"></a><br>
+<a HREF="../schedule.htm"
+OnMouseOver="ReplaceOrig('sched');return true;" OnMouseOut="RestoreOrig('sched');"><img
+SRC="sched-off.gif" NAME="sched" border="0"></a><br>
+<a HREF="../servers.htm"
+OnMouseOver="ReplaceOrig('servers');return true;" OnMouseOut="RestoreOrig('servers');"><img
+SRC="servers-off.gif" NAME="servers" border="0"></a><br>
+<a HREF="../history.htm"
+OnMouseOver="ReplaceOrig('history');return true;" OnMouseOut="RestoreOrig('history');"><img
+SRC="history-off.gif" NAME="history" border="0"></a><br>
+<a HREF="../join.htm"
+OnMouseOver="ReplaceOrig('join');return true;" OnMouseOut="RestoreOrig('join');"><img
+SRC="join-off.gif" NAME="join" border="0"></a><br>
+<a HREF="members.htm"
+OnMouseOver="ReplaceOrig('members');return true;" target="contents" OnMouseOut="RestoreOrig('members');"><img
+SRC="members-off.gif" NAME="members" border="0"></a><br>
+<a HREF="../../blank.html"
+OnMouseOver="ReplaceOrig('links');return true;" OnMouseOut="RestoreOrig('links');"><img
+SRC="links-off.gif" NAME="links" border="0"></a><br>
+
+<p><small><font face="Arial"><small><small><small>These pages are best viewed using a SVGA
+colour monitor at 800x600 resolution. All text and images are ©1999 Duncan Broom, used
+with permission by the Federation Simulation Organization and its Webpage Department. This page is best viewed using Internet Explorer or Netscape version 4 or better.  Please report all bugs / suggestions to the <a href="mailto:">webmaster</a>.</small></small></small></font></small></p>
+</body>
+</html>

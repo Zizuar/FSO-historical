@@ -1,0 +1,77 @@
+Date sent:      	Fri, 15 Jan 1999 21:19:27 -0500
+From:           	NedStat <info@usa.nedstat.net>
+To:             	Mystery6 <mystery6@startrekmail.com>
+Copies to:      	tellers@nedstat.nl
+Subject:        	NedStat Counter: 'The Federation Sim Organization'
+Send reply to:  	NedStat service afdeling <info@nedstat.nl>
+
+Dear Mystery6,
+
+Thank you for registering with NedStat. This e-mail message 
+contains all the information you need to activate the NedStat 
+counter. Follow these instructions very carefully ..... let 
+the counting commence!
+
+STEP 1. CHECK THE INFORMATION YOU HAVE GIVEN US.
+
+ - Title of the page: The Federation Sim Organization
+ - URL of the page on which the counter will be placed: http://members.xoom.com/FSO99/index.html
+ - Owner: Mystery6 (mystery6@startrekmail.com)
+ - Counter made at 21:19, from host 204.170.16.145
+ - Category: Hobbies / Games
+
+If this information is incorrect or incomplete, or if the URL of the
+counter is incorrect, then change it on the NedStat User page.
+(http://usa.nedstat.net/change.html)
+
+VERY IMPORTANT: If you want to change something with the counter later
+on you will need to do this using the users' page. The counter name
+you then need is FSO99, and the password kalmar510. So KEEP THIS
+E-MAIL IN A SAFE PLACE!
+
+If the information is correct and complete, then proceed to step 2.
+
+STEP 2. PUT THE HTML-CODE ON THE PAGE WHICH IS TO BE COUNTED.
+
+Between the lines below you can find the HTML code which has to be
+included in the HTML page to be measured. Don't change this code and
+place it in the HTML file which can be found at http://members.xoom.com/FSO99/index.html.
+
+-----
+<!-- start of NedStat code -->
+<a href="http://usa.nedstat.net/cgi-bin/viewstat?name=FSO99">
+<img src="http://usa.nedstat.net/cgi-bin/nedstat.gif?name=FSO99" border=0 alt="" width=22 height=22></a>
+<!-- end of NedStat code -->
+-----
+
+If you have an HTML-aware browser, you may see an icon instead of
+HTML-code above. If and only if this is the case, please use this code instead:
+
+-----
+&lt;!-- start of NedStat code --&gt;
+&lt;a href="http://usa.nedstat.net/cgi-bin/viewstat?name=FSO99"&gt;
+&lt;img src="http://usa.nedstat.net/cgi-bin/nedstat.gif?name=FSO99" border=0 alt="" width=22 height=22&gt;&lt;/a&gt;
+&lt;!-- end of NedStat code --&gt;
+-----
+
+PLEASE NOTE: The HTML-code ensures that the NedStat icon appears 
+visible and clickable on the page. This icon is downloaded from the 
+NedStat server. Each time this happens, a visitor is counted.
+
+Because of this, it is necessary that you copy the code exactly.
+Please use 'copy and paste' to do this. If you type it in, make
+sure you do it accurately. Don't leave out the with and height tags.
+
+If you have any questions or problems with the use of the counter,
+please check the 'Frequently Asked Questions' page at NedStat USA:
+
+  http://usa.nedstat.net/faq.html
+
+If this page does not answer your question, please contact the 
+NedStat Service Department at info@nedstat.nl.
+
+Enjoy your counter!
+
+NedStat Basic Team
+
+

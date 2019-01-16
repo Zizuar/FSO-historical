@@ -1,0 +1,240 @@
+<HTML>
+<HEAD>
+<SCRIPT><!--
+
+// The code below breaks the page free of the frames of others
+
+// Error supression
+
+function stopError() {
+  return true;
+}
+
+window.onerror = stopError;
+
+var sndok = false;
+                              
+if ( navigator.appVersion.substring(0,1) >= "3" && navigator.javaEnabled() )  {
+  sndok = true;
+}
+
+   //This is a test to determine the browser type 
+
+  var ok_browser = 1; 
+
+  bName = navigator.appName;             
+
+  bVer = parseInt(navigator.appVersion); 
+
+ 
+
+  ver = "n2"  
+
+  if      (bName == "Netscape" && bVer >= 3) ver = "n3"; 
+
+  else if (bName == "Netscape" && bVer == 2) ver = "n2"; 
+
+  else if (bName == "Microsoft Internet Explorer" && bVer >= 4) ver = "e4"; 
+
+ 
+
+  if (ver == "n3" || ver == "e4")  
+
+    ok_browser = 0; 
+
+  else 
+
+    ok_browser = 1; 
+
+ 
+
+  if ( ok_browser == 0 ) 
+
+  { 
+
+   image1off=new Image();
+
+   image1on=new Image();
+  
+   image2off=new Image();
+
+   image2on=new Image();
+
+   image3off=new Image();
+
+   image3on=new Image();
+
+   image4off=new Image();
+
+   image4on=new Image();
+
+   image5off=new Image();
+
+   image5on=new Image();
+
+   image6off=new Image();
+
+   image6on=new Image();
+
+   image7off=new Image();
+
+   image7on=new Image();
+
+   image8off=new Image();
+
+   image8on=new Image();
+
+   image9off=new Image();
+
+   image9on=new Image();
+
+   image10off=new Image();
+
+   image10on=new Image();
+
+   image11off=new Image();
+
+   image11on=new Image();
+
+   image12off=new Image();
+
+   image12on=new Image();
+
+   image13off=new Image();
+
+   image13on=new Image();
+
+image1off.src="lcars/main2.gif";
+   image1on.src="lcars/main.gif";
+
+image2off.src="lcars/crew2.gif";
+   image2on.src="lcars/crew.gif";
+
+image3off.src="lcars/specs2.gif";
+   image3on.src="lcars/specs.gif";
+
+image4off.src="lcars/info2.gif";
+   image4on.src="lcars/info.gif";
+
+image5off.src="lcars/guide2.gif";
+   image5on.src="lcars/guide.gif";
+
+image6off.src="lcars/signup2.gif";
+   image6on.src="lcars/signup.gif";
+
+image7off.src="lcars/plots2.gif";
+   image7on.src="lcars/plots.gif";
+
+image8off.src="lcars/awards2.gif";
+   image8on.src="lcars/awards.gif";
+
+image9off.src="lcars/links2.gif";
+   image9on.src="lcars/links.gif";
+
+image10off.src="lcars/webrings2.gif";
+   image10on.src="lcars/webrings.gif";
+
+image11off.src="lcars/guest2.gif";
+   image11on.src="lcars/guest.gif";
+
+image12off.src="lcars/fso2.gif";
+   image12on.src="lcars/fso.gif";
+
+image13off.src="lcars/history2.gif";
+   image13on.src="lcars/history.gif";
+
+ }
+
+  
+
+   function imageon(myname) 
+
+    { 
+
+        if ( ok_browser == 0 ) 
+
+        { 
+
+          imgOn = eval(myname + "on.src"); 
+
+          document[myname].src = imgOn; 
+
+        } 
+
+    } 
+
+    function imageoff(myname) 
+
+    { 
+
+        if ( ok_browser == 0 ) 
+
+        { 
+
+          imgOff = eval(myname + "off.src"); 
+
+          document[myname].src = imgOff; 
+
+        } 
+
+    } 
+
+   //--></SCRIPT>
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+  function isMsie4orGreater() { 
+
+    var ua = window.navigator.userAgent ; 
+
+    var msie = ua.indexOf ("MSIE ") ;
+
+    if (msie > 0){
+
+      return(parseInt(ua.substring(msie+5, ua.indexOf(".", msie))) >= 4) 
+
+        && (ua.indexOf("MSIE 4.0b") < 0) ;
+
+    }
+
+    else {
+
+      return false ;
+
+    }
+
+  }
+</SCRIPT>
+<TITLE>USS Orion</TITLE>
+</HEAD>
+<BODY BACKGROUND="blustar.gif" BGCOLOR="#000000">
+<A HREF="main.html" TARGET="main" onMouseOver="imageon('image1'); window.status='Main Page'; return true" onMouseOut="imageoff('image1'); window.status=''; return true">
+	<IMG NAME="image1" SRC="lcars/main2.gif" BORDER=0 ALT="Main Page" VSPACE=2 WIDTH=85 HEIGHT=30></A><br>
+<A HREF="crewinfo.html" TARGET="main" onMouseOver="imageon('image2'); window.status='Crew Roster'; return true" onMouseOut="imageoff('image2'); window.status=''; return true">
+	<IMG NAME="image2" SRC="lcars/crew2.gif" BORDER=0 ALT="Crew Roster" VSPACE=2 WIDTH=85 HEIGHT=30></A><br>
+<A HREF="shipinfo.html" TARGET="main" onMouseOver="imageon('image3'); window.status='Specs Page'; return true" onMouseOut="imageoff('image3'); window.status=''; return true">
+	<IMG NAME="image3" SRC="lcars/specs2.gif" BORDER=0 ALT="Specs" VSPACE=2 WIDTH=85 HEIGHT=30></A><br>
+<A HREF="info.html" TARGET="main" onMouseOver="imageon('image4'); window.status='Information'; return true" onMouseOut="imageoff('image4'); window.status=''; return true">
+	<IMG NAME="image4" SRC="lcars/info2.gif" BORDER=0 ALT="Information" VSPACE=2 WIDTH=85 HEIGHT=30></A><br>
+<A HREF="history.html" TARGET="main" onMouseOver="imageon('image13'); window.status='History'; return true" onMouseOut="imageoff('image13'); window.status=''; return true">
+	<IMG NAME="image13" SRC="lcars/history2.gif" BORDER=0 ALT="History" VSPACE=2 WIDTH=85 HEIGHT=30></A><br>
+<A HREF="simguide.html" TARGET="main" onMouseOver="imageon('image5'); window.status='Sim Guide'; return true" onMouseOut="imageoff('image5'); window.status=''; return true">
+	<IMG NAME="image5" SRC="lcars/guide2.gif" BORDER=0 ALT="Sim Guide" VSPACE=2 WIDTH=85 HEIGHT=30></A><br>
+<A HREF="signup.html" TARGET="main" onMouseOver="imageon('image6'); window.status='Sign Up Form'; return true" onMouseOut="imageoff('image6'); window.status=''; return true">
+	<IMG NAME="image6" SRC="lcars/signup2.gif" BORDER=0 ALT="Sign Up" VSPACE=2 WIDTH=85 HEIGHT=30></A><br>
+<A HREF="plot.html" TARGET="main" onMouseOver="imageon('image7'); window.status='Plot Ideas'; return true" onMouseOut="imageoff('image7'); window.status=''; return true">
+	<IMG NAME="image7" SRC="lcars/plots2.gif" BORDER=0 ALT="Plot Idea Submission" VSPACE=2 WIDTH=85 HEIGHT=30></A><br>
+<A HREF="awards.html" TARGET="main" onMouseOver="imageon('image8'); window.status='Awards Page'; return true" onMouseOut="imageoff('image8'); window.status=''; return true">
+	<IMG NAME="image8" SRC="lcars/awards2.gif" BORDER=0 ALT="Awards" VSPACE=2 WIDTH=85 HEIGHT=30></A><br>
+<A HREF="links.html" TARGET="main" onMouseOver="imageon('image9'); window.status='Links'; return true" onMouseOut="imageoff('image9'); window.status=''; return true">
+	<IMG NAME="image9" SRC="lcars/links2.gif" BORDER=0 ALT="Links" VSPACE=2 WIDTH=85 HEIGHT=30></A><br>
+<A HREF="webrings.html" TARGET="main" onMouseOver="imageon('image10'); window.status='Webrings'; return true" onMouseOut="imageoff('image10'); window.status=''; return true">
+	<IMG NAME="image10" SRC="lcars/webrings2.gif" BORDER=0 ALT="Webrings" VSPACE=2 WIDTH=85 HEIGHT=30></A><br>
+<A HREF="guestbook.html" TARGET="main" onMouseOver="imageon('image11'); window.status='Guestbook'; return true" onMouseOut="imageoff('image11'); window.status=''; return true">
+	<IMG NAME="image11" SRC="lcars/guest2.gif" BORDER=0 ALT="Guestbook" VSPACE=2 WIDTH=85 HEIGHT=30></A><br>
+<A HREF="http://members.aol.com/FSO97/" TARGET="_top" onMouseOver="imageon('image12'); window.status='FSO Homepage'; return true" onMouseOut="imageoff('image12'); window.status=''; return true">
+	<IMG NAME="image12" SRC="lcars/fso2.gif" BORDER=0 ALT="Federation Sim Organization" VSPACE=2 WIDTH=85 HEIGHT=30></A><br>
+</BODY>
+</HTML>
